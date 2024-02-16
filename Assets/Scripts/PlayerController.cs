@@ -6,30 +6,52 @@ public class VRPlayerController : MonoBehaviour
     private XRGrabInteractable grabInteractable;
     private XRDirectInteractor directInteractor;
 
+    public int maxHealth = 5;
+    private int currentHealth;
+
     void Start()
     {
-        // Get required components
         grabInteractable = GetComponent<XRGrabInteractable>();
         directInteractor = GetComponent<XRDirectInteractor>();
 
-        // Subscribe to events
         grabInteractable.onSelectEntered.AddListener(OnGrab);
         grabInteractable.onSelectExited.AddListener(OnRelease);
+
+        currentHealth = maxHealth;
     }
 
     void Update()
     {
-        // idk how to do vr 
-   
     }
 
     void OnGrab(XRBaseInteractor interactor)
     {
-        // Handle grab event
+       
     }
 
     void OnRelease(XRBaseInteractor interactor)
     {
-        // Handle release event
+    }
+
+    public void TakeDamage()
+    {
+        currentHealth--;
+
+        if (currentHealth <= 0)
+        {
+            GameOver();
+        }
+        else
+        {
+            //debug message for now 
+            Debug.Log("Player Hit! Remaining Hearts: " + currentHealth);
+
+        }
+    }
+
+    void GameOver()
+    {
+       //debug message for now 
+        Debug.Log("Game Over");
     }
 }

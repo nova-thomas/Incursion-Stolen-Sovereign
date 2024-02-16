@@ -10,22 +10,28 @@ public class RecyclerEnemy : MonoBehaviour
     private Transform player;
     private bool isPlayerInRange = false;
 
+   
     void Start()
     {
         animator = GetComponent<Animator>();
-        player = FindObjectOfType<PlayerController>().transform; 
+        player = FindObjectOfType<PlayerController>().transform;
+        animator.Play("Recycler.Idle.Gnawing");
     }
 
     void Update()
     {
         float distanceToPlayer = Vector3.Distance(transform.position, player.position);
 
+        animator.SetBool("ProximityRangeReached", isPlayerInRange);
+
+        animator.SetBool("AttackRangeReached", distanceToPlayer < attackRange);
+
+
         if (!isPlayerInRange)
         {
 
             animator.Play("Recycler.Idle.Gnawing");
 
-            // Check if player is in proximity
             if (distanceToPlayer < proximityRange)
             {
                 isPlayerInRange = true;
@@ -39,8 +45,7 @@ public class RecyclerEnemy : MonoBehaviour
             if (distanceToPlayer < attackRange)
             {
                 animator.Play("Recycler.Attack.Standard");
-
-                // hurt player logic. are we still doing 5 hearts? 
+                player.GetComponent<PlayerController>().TakeDamage();
             }
             else
             {
@@ -51,9 +56,10 @@ public class RecyclerEnemy : MonoBehaviour
 
     public void TakeDamage()
     {
-        // Perform Damage Die animation
+        //dies after one hit
+        isPlayerInRange = false;
         animator.Play("Recycler.Damage.Die");
 
-        Destroy(gameObject, 2f); // Destroy the enemy after 2 seconds
+        Destroy(gameObject, 2f); 
     }
 }
