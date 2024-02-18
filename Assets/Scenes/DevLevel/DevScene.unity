@@ -526,7 +526,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_System: {fileID: 266786562}
-  m_MoveSpeed: 1
+  m_MoveSpeed: 3
   m_EnableStrafe: 1
   m_EnableFly: 0
   m_UseGravity: 1
@@ -625,7 +625,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_System: {fileID: 266786562}
-  m_TurnSpeed: 60
+  m_TurnSpeed: 75
   m_LeftHandTurnAction:
     m_UseReference: 0
     m_Action:
@@ -679,15 +679,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 75a155a3ae19534419b10cd501db0309, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.05
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 75a155a3ae19534419b10cd501db0309, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.37
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 75a155a3ae19534419b10cd501db0309, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 75a155a3ae19534419b10cd501db0309, type: 3}
       propertyPath: m_LocalRotation.x
@@ -699,7 +699,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 75a155a3ae19534419b10cd501db0309, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 75a155a3ae19534419b10cd501db0309, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -711,12 +711,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 75a155a3ae19534419b10cd501db0309, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 75a155a3ae19534419b10cd501db0309, type: 3}
       propertyPath: m_Name
       value: Player.Hand.R
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 75a155a3ae19534419b10cd501db0309, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: af9db70e8d690b845be161cb3fc511a9, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -785,13 +789,13 @@ MonoBehaviour:
       m_SingletonActionBindings: []
       m_Flags: 0
     m_Reference: {fileID: 7904272356298805229, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  gripAnimationLocation:
+  gripAnimationAction:
     m_UseReference: 1
     m_Action:
-      m_Name: Grip Animation Location
+      m_Name: Grip Animation
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: 639de2af-acc4-4682-bf58-ae4614fa8033
+      m_Id: e9eab738-2e5c-49b6-aacd-d650bc1eea95
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -968,13 +972,13 @@ MonoBehaviour:
       m_SingletonActionBindings: []
       m_Flags: 0
     m_Reference: {fileID: -4289430672226363583, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  gripAnimationLocation:
+  gripAnimationAction:
     m_UseReference: 1
     m_Action:
-      m_Name: Grip Animation Location
+      m_Name: Grip Animation
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: d241673e-d001-485e-acd5-4e2e62e21830
+      m_Id: 87e437e8-0d03-43eb-84dd-7052ec23fe92
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -1328,7 +1332,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1077932915}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e988983f96fe1dd48800bcdfc82f23e9, type: 3}
   m_Name: 
@@ -1943,15 +1947,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f09cd09dc35553845a969b7830176b86, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.05
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f09cd09dc35553845a969b7830176b86, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.37
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f09cd09dc35553845a969b7830176b86, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f09cd09dc35553845a969b7830176b86, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1963,7 +1967,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f09cd09dc35553845a969b7830176b86, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f09cd09dc35553845a969b7830176b86, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1975,12 +1979,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f09cd09dc35553845a969b7830176b86, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f09cd09dc35553845a969b7830176b86, type: 3}
       propertyPath: m_Name
       value: Player.Hand.L
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: f09cd09dc35553845a969b7830176b86, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: a84146f33efadb643b856635b981b8cb, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2520,7 +2528,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1843154258}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e988983f96fe1dd48800bcdfc82f23e9, type: 3}
   m_Name: 
