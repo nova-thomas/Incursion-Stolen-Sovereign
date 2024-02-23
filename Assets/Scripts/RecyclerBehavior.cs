@@ -35,6 +35,7 @@ public class RecyclerEnemy : MonoBehaviour
             if (distanceToPlayer < proximityRange)
             {
                 isPlayerInRange = true;
+                animator.SetTrigger("PlayerInRange");
             }
         }
         else
