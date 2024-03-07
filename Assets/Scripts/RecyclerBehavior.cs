@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class RecyclerEnemy : MonoBehaviour
 {
-    public float proximityRange = 5f;
     public float attackRange = 2f;
     public float movementSpeed = 2f;
 
@@ -10,11 +9,10 @@ public class RecyclerEnemy : MonoBehaviour
     private Transform player;
     private bool isPlayerInRange = false;
 
-   
     void Start()
     {
         animator = GetComponent<Animator>();
-        player = FindObjectOfType<PlayerController>().transform;
+        player = transform.Find("PlayerDetector").GetComponentInChildren<Collider>().transform;
         animator.Play("Recycler.Idle.Gnawing");
     }
 
@@ -23,16 +21,13 @@ public class RecyclerEnemy : MonoBehaviour
         float distanceToPlayer = Vector3.Distance(transform.position, player.position);
 
         animator.SetBool("ProximityRangeReached", isPlayerInRange);
-
         animator.SetBool("AttackRangeReached", distanceToPlayer < attackRange);
-
 
         if (!isPlayerInRange)
         {
-
             animator.Play("Recycler.Idle.Gnawing");
 
-            if (distanceToPlayer < proximityRange)
+            if (distanceToPlayer < attackRange)
             {
                 isPlayerInRange = true;
                 animator.SetTrigger("PlayerInRange");
@@ -57,10 +52,10 @@ public class RecyclerEnemy : MonoBehaviour
 
     public void TakeDamage()
     {
-        //dies after one hit
+        // Dies after one hit
         isPlayerInRange = false;
         animator.Play("Recycler.Damage.Die");
 
-        Destroy(gameObject, 2f); 
+        Destroy(gameObject, 2f);
     }
 }
