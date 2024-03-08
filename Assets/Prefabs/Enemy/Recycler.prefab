@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &3183309699148663553
+--- !u!1001 &8389244849829589263
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -14,7 +14,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a1849102e5caa904c80bd8c32860640b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.01
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a1849102e5caa904c80bd8c32860640b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -58,20 +58,23 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a1849102e5caa904c80bd8c32860640b, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5181897556908178096}
+      addedObject: {fileID: 4461457884867263629}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a1849102e5caa904c80bd8c32860640b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8596186862458366722}
   m_SourcePrefab: {fileID: 100100000, guid: a1849102e5caa904c80bd8c32860640b, type: 3}
---- !u!1 &2372282785353365072 stripped
+--- !u!1 &8695884012479253598 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: a1849102e5caa904c80bd8c32860640b, type: 3}
-  m_PrefabInstance: {fileID: 3183309699148663553}
+  m_PrefabInstance: {fileID: 8389244849829589263}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &5181897556908178096
+--- !u!65 &4461457884867263629
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2372282785353365072}
+  m_GameObject: {fileID: 8695884012479253598}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -84,5 +87,26 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 0.48, z: 1}
+  m_Center: {x: -0.09, y: 0.31, z: 0}
+--- !u!95 &8596186862458366722
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8695884012479253598}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7ecf782f7964f7e448aae22e7fb9390e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
