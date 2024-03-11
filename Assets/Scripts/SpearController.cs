@@ -1,18 +1,66 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class SpearController : MonoBehaviour
 {
-    public Rigidbody rb;
+    public float throwForce = 10f;
+    private Vector3 throwStartPosition;
+    private Vector3 throwEndPosition;
+    private bool isThrowing = false;
+    private InputActionProperty pinchAnimationAction;
 
-    private void Start()
+
+    public void SetPinchAction(InputActionProperty action)
     {
-        rb = GetComponent<Rigidbody>();
+        pinchAnimationAction = action;
     }
-    // Update is called once per frame
-    public void normalizeDir()
+
+    void Update()
     {
-        rb.rotation = Quaternion.LookRotation(rb.velocity);
+        if (pinchAnimationAction != null)
+        {
+            float triggerValue = pinchAnimationAction.action.ReadValue<float>();
+            if (triggerValue > 0)
+            {
+                OnTriggerPressed();
+            }
+            else
+            {
+                OnTriggerReleased();
+            }
+        }
+    }
+
+    void OnTriggerPressed()
+    {
+        if (!isThrowing)
+        {
+            throwStartPosition = transform.position; // Get initial position
+            isThrowing = true;
+        }
+    }
+
+    void OnTriggerReleased()
+    {
+        if (isThrowing)
+        {
+            throwEndPosition = transform.position; // Get release position
+            ThrowSpear();
+            isThrowing = false;
+        }
+    }
+
+    void ThrowSpear()
+    {
+        Vector3 throwDirection = throwEndPosition - throwStartPosition;
+        Rigidbody rb = GetComponent<Rigidbody>();
+        rb.isKinematic = false;
+        rb.AddForce(throwDirection.normalized * throwForce, ForceMode.Impulse);
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        // Handle collision with target or environment
+        Debug.Log("Spear hit something!");
     }
 }
