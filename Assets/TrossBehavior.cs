@@ -15,7 +15,7 @@ public class TrossBehavior : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         player = FindObjectOfType<PlayerController>().transform;
-        animator.Play("Tross.Idle.Gnawing");
+        animator.Play("Tross.Attack.Standard");
     }
 
     void Update()
