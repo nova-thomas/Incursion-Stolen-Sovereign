@@ -46,8 +46,8 @@ public class HandController : MonoBehaviour
 
     private void selectEntered(SelectEnterEventArgs args)
     {
-        GameObject interactableObject = args.interactableObject.gameObject;
-        currentSpearController = interactableObject.GetComponent<SpearController>();
+        //GameObject interactableObject = args.interactableObject.gameObject;
+        //currentSpearController = interactableObject.GetComponent<SpearController>();
         if (currentSpearController)
         {
             currentSpearController.SetPinchAction(pinchAction);

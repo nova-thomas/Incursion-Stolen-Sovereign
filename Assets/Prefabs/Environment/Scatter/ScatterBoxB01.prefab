@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 978006998909186201}
+  - component: {fileID: 3037938177115974161}
   m_Layer: 0
   m_Name: ScatterBoxB01
   m_TagString: Untagged
@@ -32,6 +33,27 @@ Transform:
   - {fileID: 1238970367895624125}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &3037938177115974161
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6031718697472590552}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.2464914, y: 0.8406852, z: 0.8273251}
+  m_Center: {x: 0, y: 0.4016076, z: 0}
 --- !u!1001 &1637917738374151766
 PrefabInstance:
   m_ObjectHideFlags: 0

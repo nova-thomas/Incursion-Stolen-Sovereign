@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 324593724386303013}
   - component: {fileID: 1528189258793353114}
   m_Layer: 0
-  m_Name: LightPrefab
+  m_Name: LightPrefabR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -138,5 +138,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.2, y: 4.386986, z: 0.2}
+  m_Size: {x: 0.1, y: 4.386986, z: 0.1}
   m_Center: {x: 0, y: 2.0434928, z: 0}

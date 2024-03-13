@@ -7,7 +7,7 @@ public class SpearController : MonoBehaviour
     private Vector3 throwStartPosition;
     private Vector3 throwEndPosition;
     private bool isThrowing = false;
-    private InputActionProperty pinchAnimationAction;
+    public InputActionProperty pinchAnimationAction;
 
 
     public void SetPinchAction(InputActionProperty action)

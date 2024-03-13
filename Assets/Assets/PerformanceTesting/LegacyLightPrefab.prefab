@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7116074736143475472}
   - component: {fileID: 324593724386303013}
   m_Layer: 0
-  m_Name: LightPrefab
+  m_Name: LegacyLightPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
