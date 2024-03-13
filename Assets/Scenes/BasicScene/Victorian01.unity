@@ -839,6 +839,63 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 7.463105, y: 8.472391, z: 7.3301105}
   m_Center: {x: -2.5903163, y: 3.7361956, z: 0.053624153}
+--- !u!1001 &133349665
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6208297626944758459, guid: 0cfb0b42da2afd240a0066c3ad18f3a9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.716
+      objectReference: {fileID: 0}
+    - target: {fileID: 6208297626944758459, guid: 0cfb0b42da2afd240a0066c3ad18f3a9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.014
+      objectReference: {fileID: 0}
+    - target: {fileID: 6208297626944758459, guid: 0cfb0b42da2afd240a0066c3ad18f3a9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 12.633
+      objectReference: {fileID: 0}
+    - target: {fileID: 6208297626944758459, guid: 0cfb0b42da2afd240a0066c3ad18f3a9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6208297626944758459, guid: 0cfb0b42da2afd240a0066c3ad18f3a9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6208297626944758459, guid: 0cfb0b42da2afd240a0066c3ad18f3a9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6208297626944758459, guid: 0cfb0b42da2afd240a0066c3ad18f3a9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6208297626944758459, guid: 0cfb0b42da2afd240a0066c3ad18f3a9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6208297626944758459, guid: 0cfb0b42da2afd240a0066c3ad18f3a9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6208297626944758459, guid: 0cfb0b42da2afd240a0066c3ad18f3a9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7178266939265772434, guid: 0cfb0b42da2afd240a0066c3ad18f3a9, type: 3}
+      propertyPath: m_Name
+      value: TrossProjectile
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0cfb0b42da2afd240a0066c3ad18f3a9, type: 3}
 --- !u!4 &198077441 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2145448529483030386, guid: 61ec1926c3cc17d489bed9aa062f1a1c, type: 3}
@@ -15725,3 +15782,4 @@ SceneRoots:
   - {fileID: 1672723485}
   - {fileID: 1859311439}
   - {fileID: 852909260}
+  - {fileID: 133349665}
