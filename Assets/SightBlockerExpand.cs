@@ -21,12 +21,12 @@ public class SightBlockerExpand : MonoBehaviour
     this.transform.localScale=scale; 
 
 
-    if(Time.fixedTime>expandDelay){
+    if(Time.timeSinceLevelLoad>expandDelay){
         scale = scale + (0.1f*rate);
-        if(Time.fixedTime>expandDelay*3){
+        if(Time.timeSinceLevelLoad>expandDelay*3){
             scale = scale + (1f*rate);
         }
-        if(Time.fixedTime>20){
+        if(Time.timeSinceLevelLoad>20){
             Destroy(this.gameObject);
         }
     }

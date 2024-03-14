@@ -1423,6 +1423,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca1b11adb99871147bab1deb0c76cd50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MaxHealth: 5
 --- !u!1 &4088104465435555558
 GameObject:
   m_ObjectHideFlags: 0
@@ -1813,8 +1814,8 @@ Camera:
   m_GameObject: {fileID: 7551985038117625402}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.04705883, g: 0.098039225, b: 0.20000002, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -2100,9 +2101,10 @@ GameObject:
   - component: {fileID: 8479304597394922009}
   - component: {fileID: 5623324454371851817}
   - component: {fileID: 4499185171483188118}
+  - component: {fileID: 7359048103238206283}
   m_Layer: 3
   m_Name: XR Origin (XR Rig)
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2332,6 +2334,19 @@ MonoBehaviour:
   m_LocomotionProvider: {fileID: 8069341736558012121}
   m_MinHeight: 0
   m_MaxHeight: Infinity
+--- !u!114 &7359048103238206283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8880857520922813389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5fe1777dcf023441804a80d057dcb45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hpVisual: {fileID: 3973657245389342195}
 --- !u!1001 &697526372396500255
 PrefabInstance:
   m_ObjectHideFlags: 0

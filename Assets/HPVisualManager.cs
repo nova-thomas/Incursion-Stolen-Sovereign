@@ -12,23 +12,33 @@ public class HPVisualManager : MonoBehaviour
     void Start()
     {
         MaxHealth = 5;
-       
+        DontDestroyOnLoad(this.gameObject);
     }
 
 
 
- 
+
 
     public void takeDamage(){
         if(count<MaxHealth){
             this.gameObject.transform.GetChild(count).gameObject.SetActive(false);
             count+=1;
         } else {
-            Debug.Log("die");
-            //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-            Application.LoadLevel(1);
+      
+            
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            //Application.LoadLevel(1);
+
         }
     }
+
+
+
+    
+
+
+
+
 
     public void healDamage(){
         if(count!=0){
