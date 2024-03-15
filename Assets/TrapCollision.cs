@@ -21,13 +21,14 @@ public class TrapCollision : MonoBehaviour
 
         
 
-        if (!other.gameObject.CompareTag("Player")){ 
-                Debug.Log("WrongTag");
-            }
-
+        if (other.gameObject.CompareTag("Player")){ 
+                other.transform.parent.parent.parent.GetComponent<StatManager>().DoDamage();
+                Debug.Log(other.transform.parent.parent.parent.gameObject);
+        } 
+        
 
         
-        other.GetComponent<StatManager>().DoDamage();
+        //other.GetComponent<StatManager>().DoDamage();
     }
 
 

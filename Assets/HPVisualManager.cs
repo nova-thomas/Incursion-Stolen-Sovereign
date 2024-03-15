@@ -20,7 +20,7 @@ public class HPVisualManager : MonoBehaviour
 
 
     public void takeDamage(){
-        if(count<MaxHealth){
+        if(count+1 < MaxHealth){
             this.gameObject.transform.GetChild(count).gameObject.SetActive(false);
             count+=1;
         } else {
