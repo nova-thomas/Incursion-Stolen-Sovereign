@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Anchor
+  - CinemachineTarget
+  - Waypoints
   layers:
   - Default
   - TransparentFX
