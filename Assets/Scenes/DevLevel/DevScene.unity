@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -894,29 +894,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pinchAnimationAction:
-    m_UseReference: 1
+    m_UseReference: 0
     m_Action:
       m_Name: Pinch Animation
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: 45ce89ad-a8d5-4f64-a9da-17cfb8ccbba5
+      m_Id: 0eb68248-3f97-4bd9-98c4-b3619bddcaf7
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_Reference: {fileID: 7904272356298805229, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+    m_Reference: {fileID: 0}
   gripAnimationAction:
-    m_UseReference: 1
+    m_UseReference: 0
     m_Action:
       m_Name: Grip Animation
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: e9eab738-2e5c-49b6-aacd-d650bc1eea95
+      m_Id: d2c3db9b-101a-4b3e-a749-c8c8db467199
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_Reference: {fileID: -1758520528963094988, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+    m_Reference: {fileID: 0}
   handAnimator: {fileID: 551756565}
 --- !u!95 &551756565
 Animator:
@@ -1020,29 +1020,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pinchAnimationAction:
-    m_UseReference: 1
+    m_UseReference: 0
     m_Action:
       m_Name: Pinch Animation
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: c0b9ea34-eccc-42ba-a930-b6279f6e9621
+      m_Id: e6094d7b-9236-4717-ab8a-a1bde5a90e86
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_Reference: {fileID: -4289430672226363583, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+    m_Reference: {fileID: 0}
   gripAnimationAction:
-    m_UseReference: 1
+    m_UseReference: 0
     m_Action:
       m_Name: Grip Animation
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: 87e437e8-0d03-43eb-84dd-7052ec23fe92
+      m_Id: 5ed65462-f269-4cf8-a97b-5edbae52b4eb
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_Reference: {fileID: 6558622148059887818, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+    m_Reference: {fileID: 0}
   handAnimator: {fileID: 776816187}
 --- !u!95 &776816187
 Animator:
@@ -1196,7 +1196,7 @@ MonoBehaviour:
   m_InteractionLayers:
     m_Bits: 4294967295
   m_DistanceCalculationMode: 1
-  m_SelectMode: 0
+  m_SelectMode: 1
   m_FocusMode: 1
   m_CustomReticle: {fileID: 0}
   m_AllowGazeInteraction: 0
@@ -1278,9 +1278,9 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
-  m_AttachTransform: {fileID: 1440637623}
-  m_SecondaryAttachTransform: {fileID: 1290687985}
-  m_UseDynamicAttach: 0
+  m_AttachTransform: {fileID: 0}
+  m_SecondaryAttachTransform: {fileID: 0}
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
@@ -1303,7 +1303,7 @@ MonoBehaviour:
   m_SmoothScale: 0
   m_SmoothScaleAmount: 8
   m_TightenScale: 0.1
-  m_ThrowOnDetach: 0
+  m_ThrowOnDetach: 1
   m_ThrowSmoothingDuration: 0.25
   m_ThrowSmoothingCurve:
     serializedVersion: 2
@@ -1402,7 +1402,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5819fe21700bf04ebcfea92483dfdb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  throwForce: 10
 --- !u!1 &1077932915
 GameObject:
   m_ObjectHideFlags: 0
@@ -2058,10 +2057,10 @@ MonoBehaviour:
   pinchAction:
     m_UseReference: 0
     m_Action:
-      m_Name: Pinch
+      m_Name: 
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: 43fd7067-5efa-4bee-ad39-45afb9b35a3d
+      m_Id: bb9dc963-841c-47d5-9c65-15829e4e3761
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -2414,68 +2413,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f09cd09dc35553845a969b7830176b86, type: 3}
   m_PrefabInstance: {fileID: 1258712970}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1290687984
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1290687985}
-  m_Layer: 7
-  m_Name: Attach Point Secondary
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1290687985
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1290687984}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: -0.7071068, w: 0}
-  m_LocalPosition: {x: 0, y: -0.0007, z: 0.00569}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1053174395}
-  m_LocalEulerAnglesHint: {x: 90, y: 180, z: 0}
---- !u!1 &1440637622
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1440637623}
-  m_Layer: 7
-  m_Name: Attach Point Main
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1440637623
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1440637622}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: -0.7071068, w: 0}
-  m_LocalPosition: {x: 0, y: -0.0007, z: 0.01151}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1053174395}
-  m_LocalEulerAnglesHint: {x: 90, y: 180, z: 0}
 --- !u!1 &1716621120
 GameObject:
   m_ObjectHideFlags: 0
@@ -3059,12 +2996,6 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4ca5c7d87d2250e46a52ae9973dab5dd, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1440637623}
-    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4ca5c7d87d2250e46a52ae9973dab5dd, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1290687985}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4ca5c7d87d2250e46a52ae9973dab5dd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1716621121}
@@ -3740,7 +3671,7 @@ MonoBehaviour:
       m_Name: Pinch
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: 3092cd3d-d6b4-4be3-b103-3b869d8d583e
+      m_Id: ab88c586-3737-4ed0-8790-53b1497565a0
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
