@@ -396,7 +396,7 @@ MonoBehaviour:
       m_Calls: []
   m_AttachTransform: {fileID: 2797678084330989174}
   m_SecondaryAttachTransform: {fileID: 5759200439962666964}
-  m_UseDynamicAttach: 0
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
@@ -419,7 +419,7 @@ MonoBehaviour:
   m_SmoothScale: 0
   m_SmoothScaleAmount: 8
   m_TightenScale: 0.1
-  m_ThrowOnDetach: 0
+  m_ThrowOnDetach: 1
   m_ThrowSmoothingDuration: 0.25
   m_ThrowSmoothingCurve:
     serializedVersion: 2
@@ -465,4 +465,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5819fe21700bf04ebcfea92483dfdb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  throwForce: 10
